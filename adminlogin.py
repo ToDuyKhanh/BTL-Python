@@ -147,8 +147,7 @@ class Ui_MainWindow(object):
             
                 cursor.close()
                 connection.close()
-        
-                
+                print("ngô huy dzaip")
         except Error as e:
             QtWidgets.QMessageBox.critical(None, 'Error', f"Error: {e}")
             
