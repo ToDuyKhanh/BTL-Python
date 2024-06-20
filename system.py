@@ -15,7 +15,7 @@ class Ui_MainWindow(object):
         self.background.setGeometry(QtCore.QRect(0, 0, 800, 600))
         self.background.setPixmap(QtGui.QPixmap("img/mau-thiet-ke-noi-that-showroom-ao-cuoi.jpg"))
         self.background.setScaledContents(True)
-
+        self.background.setObjectName("backgrao-color:đen")
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
         self.label.setGeometry(QtCore.QRect(200, 60, 400, 61))
         font = QtGui.QFont()
@@ -96,7 +96,7 @@ class Ui_MainWindow(object):
     
 
 if __name__ == "__main__":
-    import sys
+    import sys 
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
