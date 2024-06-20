@@ -142,12 +142,13 @@ class Ui_MainWindow(object):
                     self.ui.setupUi(self.adminWindow)
                     self.adminWindow.show()
                     
+                    
                 else:
                     QtWidgets.QMessageBox.warning(None, 'Error', 'Invalid username or password')
             
                 cursor.close()
                 connection.close()
-        
+                print("huy dẹp trai vaui llin") 
                 
         except Error as e:
             QtWidgets.QMessageBox.critical(None, 'Error', f"Error: {e}")
